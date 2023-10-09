@@ -1,11 +1,13 @@
 sap.ui.define([
-	"sap/m/Text"
-
-], function (Text) {
+	"sap/ui/core/ComponentContainer"
+], function (ComponentContainer) {
 	"use strict";
 
-	new Text({
-		text: "Hello World"
+	new ComponentContainer({
+		name: "sap.ui.demo.walkthrough",
+		settings : {
+			id : "walkthrough"
+		},
+		async: true
 	}).placeAt("content");
-
 });
